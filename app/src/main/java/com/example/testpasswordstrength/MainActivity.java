@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             txt_input_password.setError("Please enter your password");
             return false;
         } else if (!PASSWORD_PATTERN.matcher(passwordInput).matches()) {
-            txt_input_password.setError("Password too week");
+            txt_input_password.setError("Password too weak");
             return false;
         } else {
             txt_input_password.setError(null);
